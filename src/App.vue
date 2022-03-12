@@ -28,7 +28,12 @@
       </div>
     </div>
     <p>price : {{data[selectedNum].price}}</p>
-    <button @click="modalopen=false">close</button>
+
+    <div class="btn-group">
+      <button @click="selectedNum--; selectedNum<0 ? (selectedNum=0) : selectedNum;">&lt;</button>
+      <button @click="modalopen=false">close</button>
+      <button @click="selectedNum++; selectedNum>(data.length-1)? (selectedNum=data.length-1) : selectedNum;">&gt;</button>
+    </div>
   </div>
 </div>
 
@@ -80,6 +85,7 @@ export default {
   .cont-container .profil{display: flex; width:100%;justify-content: space-evenly;align-items: center;}
   .cont-container .profil div{width:50%;}
   .cont-container .profil div img{width:150px; height:150px;object-fit: contain;}
-  .cont-container button {font-size: 1rem;background: #fff;outline: none;padding:10px;}
+  .cont-container .btn-group{width:100%;display: flex; justify-content: space-evenly;}
+  .cont-container button {font-size: 1rem;background:darkmagenta;color:#fff;outline: none;padding:10px;}
 
 </style>
