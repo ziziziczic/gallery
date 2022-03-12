@@ -82,10 +82,11 @@ export default {
   .img-container{flex-basis: 50%;}
   .img-container img{width:100%;height:auto;}
   .cont-container{flex-basis: 50%;padding:10px;display:flex;flex-direction: column;justify-content: space-evenly;align-items: center;}
+  .cont-container h1{border-bottom: 1px solid #fff; width:80%; text-align:center;padding-bottom: 5px;}
   .cont-container .profil{display: flex; width:100%;justify-content: space-evenly;align-items: center;}
   .cont-container .profil div{width:50%;}
   .cont-container .profil div img{width:150px; height:150px;object-fit: contain;}
   .cont-container .btn-group{width:100%;display: flex; justify-content: space-evenly;}
-  .cont-container button {font-size: 1rem;background:darkmagenta;color:#fff;outline: none;padding:10px;}
+  .cont-container button {font-size: 1rem;background:#000;color:#fff;outline: none;padding:10px;}
 
 </style>
